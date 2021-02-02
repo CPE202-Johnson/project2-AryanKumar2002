@@ -4,6 +4,8 @@ from stack_array import Stack
 class PostfixFormatException(Exception):
     pass
 
+#Str -> Int
+#Returns the result of a postfix expression
 def postfix_eval(input_str):
     '''Evaluates a postfix expression
     
@@ -63,7 +65,8 @@ def postfix_eval(input_str):
     final = stack.pop()
     return final
 
-    
+#Str -> Str
+#Converts prefix expression to a postfix expression
 def prefix_to_postfix(input_str):
     '''Converts a prefix expression to an equivalent postfix expression
     
